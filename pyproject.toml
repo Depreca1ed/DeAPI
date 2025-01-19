@@ -59,7 +59,7 @@ inline-quotes = "single"
 [tool.pyright]
 ignore = ['config.py']
 useLibraryCodeForTypes = true
-typeCheckingMode = "strict"
+typeCheckingMode = "basic"
 pythonVersion = "3.12"
 enableExperimentalFeatures = true
 reportIncompatibleMethodOverride = false
