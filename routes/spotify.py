@@ -47,6 +47,20 @@ def spotify_img(spotify_icon: BytesIO, data: SpotifyData) -> BytesIO:
     draw.text(ARTISTS_COORDS, text='By ' + ', '.join(data.artists), font=font2, fill=_image_resized, anchor='mm')
     if data.album:
         draw.text(ALBUM_COORDS, text='On ' + data.album, font=font2, fill=_image_resized, anchor='mm')
+
+    #    dr.rounded_rectangle((128 - 16, 128 - 16, 1024 - 128 + 16, 128 + 16), fill=y, radius=45)
+    #    val1 = datetime.datetime.now(tz=datetime.UTC) - act.start
+    #    val2 = val1.seconds / act.duration.seconds
+    #    dr.rounded_rectangle((128 - 16, 128 - 16, 128 + 16 + round(val2 * (1024 - 256)), 128 + 16), fill=x, radius=45)
+    #    dr.text((128 - 16, 128 + 16 + 8), text=f'{round(val1.seconds / 60)}:{val1.seconds % 60}', fill=x, font=fntt, anchor='lt')
+    #    dr.text(
+    #        (1024 - 128 + 16, 128 + 16 + 8),
+    #        text=f'{round(act.duration.seconds / 60)}:{act.duration.seconds % 60}',
+    #        fill=x,
+    #        font=fntt,
+    #        anchor='rt',
+    #    )
+
     buffer = BytesIO()
     bg.save(buffer, 'png')
     buffer.seek(0)
