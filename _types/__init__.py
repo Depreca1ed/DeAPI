@@ -1,5 +1,6 @@
-from .spotify import SpotifyData
+from .spotify import SpotifyData, SpotifyInput
 
 __all__ = [
     'SpotifyData',
+    'SpotifyInput'
 ]
